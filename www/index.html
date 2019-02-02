@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="color-theme-blue">
+    <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+        <div class="pages navbar-fixed toolbar-fixed">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="panel panel-left panel-cover">
+                <div class="block">
+                    <a class="button button-raised panel-close" style="color:#0836b8ab">Close</a>
+                </div>
+            </div>
+            <!-- Initial Page, "data-name" contains page name -->
+            <div class="view view-main">
+                <div data-name="home" class="page">
+                    <!-- Top Navbar -->
+                    <div class="navbar no-shadow no-hairlines">
+                        <div class="navbar-inner">
+                            <div class="left sliding">
+                                <a href="#" class="link icon-only panel-open">
+                                    <!--<i class="icon f7-icons ios-only">menu</i>-->
+                                    <i class="icon material-icons">menu</i>
+                                </a>
+                            </div>
+                            <div class="title sliding">Contact App</div>
+                            <div class="right">
+                                <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-demo">
+                                    <i class="icon material-icons" style="width: 15px;">search</i>
+                                </a>
+                            </div>
+                            <form data-search-container=".search-list" data-search-in=".item-title" class="searchbar searchbar-expandable searchbar-demo searchbar-init">
+                                <div class="searchbar-inner">
+                                    <div class="searchbar-input-wrap">
+                                        <input type="search" placeholder="Search" />
+                                        <i class="searchbar-icon"></i>
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                    <span class="searchbar-disable-button">Cancel</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="searchbar-backdrop"></div>
+                        <div class="list searchbar-not-found">
+                            <ul>
+                                <li>Nothing found</li>
+                            </ul>
+                        </div>
+                        <div class="list search-list searchbar-found">
+                            <ul id="lister">
+                                <!--<li>
+                                <a href="#" class="item-link item-content callr00" onclick="app.methods.callNumbers('0000000000')">
+                                    <div class="item-media"><i class="material-icons color-red">contacts</i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title">Just A test</div>
+                                        <div class="item-after num00">0000000000</div>
+                                    </div>
+                                </a>
+                            </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+</body>
+
+</html>

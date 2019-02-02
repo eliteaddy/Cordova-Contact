@@ -1,0 +1,34 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.eliteaddy.contact"
+    },
+    "cordova-plugin-contacts-phonenumbers": {
+      "PACKAGE_NAME": "com.eliteaddy.contact"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-call-number": {
+      "PACKAGE_NAME": "com.eliteaddy.contact"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.eliteaddy.contact"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.eliteaddy.contact"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.eliteaddy.contact"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.eliteaddy.contact"
+    }
+  }
+}
